@@ -1,0 +1,36 @@
+﻿<%@ Master Language="C#" AutoEventWireup="true" CodeBehind="MasterPage.master.cs" Inherits="Prueba2PostBack.MasterPage" %>
+
+<!DOCTYPE html>
+
+<html>
+<head runat="server">
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8"/>
+    <link href="styles.css" rel="stylesheet" />
+    <title>Main</title>
+    <asp:ContentPlaceHolder ID="head" runat="server">
+    </asp:ContentPlaceHolder>
+</head>
+<body>
+
+    <nav>
+        <ul>
+            <li><a href="Inicio.aspx">Inicio</a></li>
+            <li><a href="Nosotros.aspx">Nosotros</a></li>
+            <li><a href="Productos.aspx">Productos</a></li>
+            <li><a href="Formulario.aspx">Comprar</a></li>
+            <li><a href="TicketCompra.aspx">Ticket de Compra</a></li>
+        </ul>
+    </nav>
+
+    <form id="form1" runat="server">
+        <div>
+            <asp:ContentPlaceHolder ID="ContentPlaceHolder1" runat="server">
+            </asp:ContentPlaceHolder>
+        </div>
+    </form>
+
+    <footer>
+        <p>Los Pollos Hermanos, donde algo delicioso siempre se está cocinando.</p>
+    </footer>
+</body>
+</html>

@@ -1,0 +1,310 @@
+﻿*,
+*::after,
+*:before{
+    box-sizing:border-box;
+}
+html{
+}
+body {
+    margin: 0;
+    padding: 0;
+    font-family: 'Helvetica Neue', Arial, sans-serif;
+    background-color: #f0f0f0;
+    color: #333;
+    line-height: 1.6;
+}
+form {
+    display: flex;
+    justify-content: center;
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 10px;
+}
+nav {
+    background-color: #fff400ff;
+    border-bottom: 2px solid #fff400ff;
+}
+   nav ul {
+        list-style-type: none;
+        margin: 0;
+        padding: 0;
+        text-align: center;
+    }
+        nav ul li {
+            display: inline;
+        }
+            nav ul li a {
+                display: inline-block;
+                color: #c42124;
+                font-weight: 700;
+                text-decoration: none;
+                padding: 15px 20px;
+                transition: background-color 0.3s;
+            }
+                nav ul li a:hover {
+                    background-color: #bc242a;
+                }
+footer {
+    background-color: #849826;
+    color: #fff;
+    text-align: center;
+    padding: 10px 0;
+    border-top: 2px solid #849826;
+}
+    footer p {
+        margin: 0;
+        font-size: 0.9rem;
+    }
+a {
+    color: #333;
+    text-decoration: none;
+    transition: color 0.3s;
+}
+    a:hover {
+        color: #e8dbdb;
+    }
+button {
+    background-color: #333;
+    color: #fff;
+    border: none;
+    padding: 10px 20px;
+    cursor: pointer;
+    border-radius: 5px;
+    transition: background-color 0.3s;
+}
+    button:hover {
+        background-color: #555;
+    }
+/**STYLOS DE INICIO*/
+#imggustavofringfrase,
+#lospolloshermanosnosotros {
+    border-radius: 15px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+    border: 2px solid #ddd;
+    transition: transform 0.3s, box-shadow 0.3s;
+    filter: grayscale(0%);
+    transition: filter 0.5s;
+    width:400px;
+    height:auto;
+}
+    #imggustavofringfrase:hover,
+    #lospolloshermanosnosotros:hover {
+        transform: scale(1.05);
+        box-shadow: 0 8px 16px rgba(0, 0, 0, 0.3);
+        filter: grayscale(100%);
+    }
+    h1 {
+        text-align: center;
+        font-size: 4rem;
+        color: #dbd103ff;
+        font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+        margin: 0;
+    }
+p{
+    font-size:1.5rem;
+}
+#polloshermanos{
+    display:flex;
+    flex-direction:row;
+    justify-content:center;
+    align-items:center;
+    padding:2rem;
+}
+#mainpolloshermanosinicio{
+    margin: 0 18%;
+}
+
+#imggustavofringfrase{
+    width:400px;
+    height:auto;
+}
+#divfrasegustavofring{
+    display:flex;
+    flex-direction:column;
+}
+    #divfrasegustavofring blockquote {
+        display: flex;
+        align-items: center;
+        align-content:center;
+        margin: 0.3rem 1rem;
+        justify-content: center;
+        flex-direction: row;
+        gap:0.7rem;
+
+    }
+/*ESTILOS SOBRE NOSOTROS*/
+#sectionnostrospollos{
+    display:flex;
+    flex-direction:row;
+    align-content:center;
+    align-items:center;
+    gap: 1rem;
+}
+#productossection{
+    display:flex;
+    flex-direction:row;
+    align-content:center;
+    justify-content:center;
+    align-items: center;
+    flex-wrap: wrap;
+    gap: 1rem;
+    margin-bottom: 18.75rem
+    
+}
+    #productossection h5 {
+        text-align: center;
+    }
+#productossection div {
+        padding: 1rem;
+        border: 2px solid black;
+        border-radius: 0.8rem;
+    }
+/*ESTILOS FORMULARIO*/
+#divformulariocomprar {
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+    gap: 1rem;
+    border: 2px black solid;
+    border-radius: 10px;
+    width: 400px;
+    padding: 1rem;
+    align-self: center;
+}
+#divformulariocomprar {
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+    gap: 1rem;
+    border: 2px black solid;
+    border-radius: 10px;
+    width: 400px;
+    padding: 1rem;
+    align-self: center;
+    background-color: #f9f9f9;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+}
+.form-label {
+    font-size: 1rem;
+    font-weight: bold;
+    color: #333;
+    margin-bottom: 0.5rem;
+}
+.form-input {
+    width: 100%;
+    padding: 0.5rem;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    font-size: 1rem;
+}
+.form-select {
+    width: 100%;
+    padding: 0.5rem;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    font-size: 1rem;
+    background-color: #fff;
+}
+.form-button {
+    width: 100%;
+    padding: 0.75rem;
+    border: none;
+    border-radius: 5px;
+    background-color: #007bff;
+    color: #fff;
+    font-size: 1rem;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+}
+    .form-button:hover {
+        background-color: #0056b3;
+    }
+/*Estilos Productos*/
+#productossection {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+    gap: 20px;
+    padding: 20px;
+    margin: 40px 0px;
+}
+.producto {
+    border: 1px solid #ccc;
+    border-radius: 8px;
+    overflow: hidden;
+    background-color: #fff;
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+    transition: transform 0.3s, box-shadow 0.3s;
+    height:500px
+}
+    .producto:hover {
+        transform: translateY(-10px);
+        box-shadow: 0 4px 15px rgba(0, 0, 0, 0.2);
+    }
+    .producto img {
+        width: 100%;
+        height: auto;
+        display: block;
+    }
+    .producto h5 {
+        font-size: 1.2em;
+        margin: 15px;
+        color: #333;
+    }
+    .producto p {
+        text-align:center;
+        font-size: 0.9em;
+        margin: 0.5rem;
+        width:20ch;
+        height: 12ch;
+        color: #666;
+    }
+        .producto p span {
+            font-weight: bold;
+            color: #000;
+        }
+/*Ticket*/
+.ticket-compra {
+    display: flex;
+    flex-direction: column;
+    gap: 1rem;
+    padding: 1.5rem;
+    border: 2px solid #333;
+    border-radius: 10px;
+    background-color: #fff;
+    width: 300px;
+    margin: 0 auto;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+}
+.ticket-title {
+    font-size: 1.5rem;
+    font-weight: bold;
+    color: #c42124;
+    text-align: center;
+    margin-bottom: 1rem;
+}
+.ticket-label {
+    font-size: 1rem;
+    color: #555;
+    padding: 0.5rem;
+    border-bottom: 1px solid #ccc;
+}
+    .ticket-label:last-child {
+        border-bottom: none;
+    }
+.print-button {
+    display: block;
+    width: 100%;
+    padding: 0.75rem;
+    margin-top: 1rem;
+    border: none;
+    border-radius: 5px;
+    background-color: #c42124;
+    color: #fff;
+    font-size: 1rem;
+    cursor: pointer;
+    text-align: center;
+    transition: background-color 0.3s ease;
+}
+    .print-button:hover {
+        background-color: #c42124;
+    }
